@@ -1,0 +1,99 @@
+/* === Global Variables === */
+:root {
+  /* Brand Colors */
+  --primary: #0077ff;
+  --primary-dark: #005fcc;
+  --secondary: #222;
+  --light-bg: #f9f9f9;
+  --text-dark: #333;
+  --text-light: #666;
+  --border-color: #ddd;
+
+  /* Typography */
+  --font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  --h1-size: 42px;
+  --h2-size: 28px;
+  --h3-size: 20px;
+  --body-size: 15px;
+
+  /* Spacing */
+  --section-padding: 80px;
+  --card-radius: 12px;
+  --btn-radius: 8px;
+}
+
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Base Styles === */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-family);
+  background-color: #fff;
+  color: var(--text-dark);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+p {
+  font-size: var(--body-size);
+  color: var(--text-light);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+/* === Scrollbar Styling === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* === Responsive Typography === */
+@media (max-width: 768px) {
+  :root {
+    --h1-size: 32px;
+    --h2-size: 24px;
+    --h3-size: 18px;
+    --body-size: 14px;
+    --section-padding: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --h1-size: 24px;
+    --h2-size: 20px;
+    --h3-size: 16px;
+    --body-size: 13px;
+    --section-padding: 40px;
+  }
+}

@@ -1,0 +1,98 @@
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  background: #ccc;
+  height: 180px;
+}
+
+.info {
+  padding: 16px;
+  text-align: left;
+}
+
+.info h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.rating {
+  font-size: 14px;
+  color: #777;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.btn {
+  padding: 10px 16px;
+  background: #0077ff;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #005fcc;
+}
+
+.viewMore {
+  margin-top: 24px;
+  padding: 12px 20px;
+  border: none;
+  background: #222;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.viewMore:hover {
+  background: #000;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

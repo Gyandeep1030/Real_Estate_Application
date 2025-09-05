@@ -1,0 +1,42 @@
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+  .links {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

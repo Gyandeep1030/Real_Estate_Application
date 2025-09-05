@@ -1,0 +1,97 @@
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Base Styles === */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Root container */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content between Navbar & Footer */
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+/* === Utility Classes === */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-primary {
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #005fcc;
+}
+
+.btn-dark {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-dark:hover {
+  background: #000;
+}
+
+/* === Responsive Helpers === */
+@media (max-width: 1024px) {
+  main {
+    padding: 32px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 24px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 20px 8px;
+  }
+}
