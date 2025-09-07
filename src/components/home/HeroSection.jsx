@@ -47,7 +47,7 @@ const PinIcon = () => (
 
 const HeroSection = () => {
   return (
-    <div className={styles.body}>
+    
       <section className={styles.hero} style={{ backgroundImage: `url(${heroBg})` }}>
         <div className={styles.overlay}>
           <div className={styles.container}>
@@ -68,24 +68,27 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
+
+            
           </div>
         </div>
+        {/* ✅ Filter Row with Icons */}
+            <div className={styles.filterRow}>
+              <button className={styles.filterBtn}>
+                <RentIcon /> For Rent <ChevronDown />
+              </button>
+              <button className={styles.filterBtn}>
+                <HouseIcon /> House <ChevronDown />
+              </button>
+              <button className={styles.filterBtn}>
+                <PinIcon /> Indonesia <ChevronDown />
+              </button>
+              <button className={styles.findBtn}>Find Property</button>
+            </div>
       </section>
 
-      {/* ✅ Filter Row with Icons */}
-      <div className={styles.filterRow}>
-        <button className={styles.filterBtn}>
-          <RentIcon /> For Rent <ChevronDown />
-        </button>
-        <button className={styles.filterBtn}>
-          <HouseIcon /> House <ChevronDown />
-        </button>
-        <button className={styles.filterBtn}>
-          <PinIcon /> Indonesia <ChevronDown />
-        </button>
-        <button className={styles.findBtn}>Find Property</button>
-      </div>
-    </div>
+      
+  
   );
 };
 

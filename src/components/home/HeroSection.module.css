@@ -1,16 +1,15 @@
 .hero {
   position: relative;
-  border-radius: 20px; /* 2xl rounded corners */
-  overflow: hidden;
-  margin: 20px;
-  margin-left: 4%;
-  margin-right: 4%;
+  border-radius: 20px;
+  overflow: visible; /* ✅ allow filterRow to stick out */
+  margin: 20px 4%;
   min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
   background-position: center;
+  padding-bottom: 80px; /* gives breathing room under hero */
 }
 .body{
 
@@ -131,18 +130,18 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
-  /* margin-top: 20px; */
-  flex-wrap: wrap;
   background: #ffffff;
   width: 80%;
+  /* max-width: 1000px; */
   height: 110px;
-  opacity: 1;
-  top: 650px;;
-  left: 167px;
   border-radius: 46px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  /* ✅ floating half in / half out */
   position: absolute;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  
+  bottom: -55px; /* half of height */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 .filterBtn {
