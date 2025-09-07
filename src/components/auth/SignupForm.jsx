@@ -82,7 +82,7 @@ const SignupForm = () => {
             />
 
             </div>
-          
+
           </div>
 
           <div className={styles.inputGroup}>
@@ -149,13 +149,13 @@ const SignupForm = () => {
 
         <div className={styles.socials}>
           <button className={styles.socialBtn}>
-            <img src="/src/assets/icons/Apple.png" alt="Apple Logo" />
+            <img src="/icons/Apple.png" alt="Apple Logo" />
           </button>
           <button className={styles.socialBtn}>
-            <img src="/src/assets/icons/Facebook.png" alt="Facebook Logo" />
+            <img src="/icons/Facebook.png" alt="Facebook Logo" />
           </button>
           <button className={styles.socialBtn} onClick={handleGoogleSignup}>
-            <img src="/src/assets/icons/Google.png" alt="Google Logo" />
+            <img src="/icons/google.png" alt="Google Logo" />
           </button>
         </div>
 

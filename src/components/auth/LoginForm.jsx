@@ -169,18 +169,18 @@ const LoginForm = () => {
 
         <div className={styles.socials}>
           <button className={styles.socialBtn}>
-            <img src="/src/assets/icons/Apple.png" alt="Apple Logo" />
+            <img src="/icons/Apple.png" alt="Apple Logo" />
           </button>
           <button className={styles.socialBtn}>
-            <img src="/src/assets/icons/Facebook.png" alt="Facebook Logo" />
+            <img src="/icons/Facebook.png" alt="Facebook Logo" />
           </button>
           <button className={styles.socialBtn} onClick={handleGoogleLogin}>
-            <img src="/src/assets/icons/Google.png" alt="Google Logo" />
+            <img src="/icons/google.png" alt="Google Logo" />
           </button>
         </div>
 
         <p className={styles.footerText}>
-          Doesn’t have an account?{" "}
+          Doesn't have an account?{" "}
           <Link to="/signup" className={styles.signupLink}>
             Create One
           </Link>
