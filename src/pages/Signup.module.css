@@ -1,31 +1,144 @@
-.signupPage {
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+}
+
+.formSection {
+  flex: 1;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imageSection {
+  flex: 1;
+  background: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 70px); /* account for navbar height */
-  background: #f9f9f9;
-  padding: 40px 20px;
 }
 
-.container {
+.imageSection img {
   width: 100%;
-  max-width: 420px;
-  background: #fff;
-  padding: 40px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  text-align: center;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
-.title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: #222;
-}
-
-.subtitle {
+.backBtn {
+  display: inline-block;
+  margin-bottom: 30px;
   font-size: 15px;
-  color: #666;
+  color: #1e3a8a;
+  border: 1px solid #1e3a8a;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.backBtn:hover {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
   margin-bottom: 24px;
+  color: #111;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.inputWithIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputWithIcon input {
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s;
+}
+.inputWithIcon input:focus {
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.2);
+}
+
+.icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+}
+
+.createBtn {
+  background: #1e3a8a;
+  color: #fff;
+  padding: 14px;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.createBtn:hover {
+  background: #2563eb;
+}
+
+.footerText {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #555;
+}
+.loginLink {
+  color: #1e3a8a;
+  font-weight: 600;
+  text-decoration: none;
+}
+.loginLink:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .imageSection {
+    display: none;
+  }
+
+  .formSection {
+    width: 100%;
+    padding: 20px;
+  }
 }

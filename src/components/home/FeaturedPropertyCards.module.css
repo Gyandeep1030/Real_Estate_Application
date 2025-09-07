@@ -1,0 +1,119 @@
+.section {
+  padding: 60px 20px;
+  margin: 0 auto;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.moreBtn {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #1e3a8a;
+  color: #1e3a8a;
+  font-weight: 500;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.moreBtn:hover {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
+  gap: 60px 24px; /* extra row gap so overlays don’t overlap */
+}
+
+.cardWrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: visible; /* allow overlay to stick out */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 650px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cardWrapper:hover {
+  transform: translateY(-6px);
+}
+
+.cardImage {
+  width: 100%;
+  height: 650px;
+  object-fit: cover; /* keeps image proportional */
+  border-radius: 20px;
+}
+
+/* Overlay half inside & half outside */
+.cardOverlay {
+  position: absolute;
+  bottom: -60px; /* pushes it half outside */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.cardDesc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.knowMoreBtn {
+  background: #1e3a8a;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.knowMoreBtn:hover {
+  background: #2563eb;
+}

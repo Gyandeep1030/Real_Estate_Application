@@ -7,6 +7,39 @@
   z-index: 1000;
 }
 
+.backButton {
+  display: inline-block;
+  /* margin-bottom: 40px; */
+  font-size: 16px;
+  color: #1e3a8a;
+  border: 1.5px solid #1e3a8a;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.backButton:hover {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+.aboutButton{
+  display: inline-block;
+  /* margin-bottom: 40px; */
+  font-size: 16px;
+  color: #ffffff;
+  border: 1.5px solid #1e3a8a;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: 0.3s;
+  background: #1e3a8a;
+}
+.aboutButton:hover {
+  background: #ffffff;
+  color: #fff;
+}
+
 .container {
   /* max-width: 1200px; */
   margin: 0 auto;

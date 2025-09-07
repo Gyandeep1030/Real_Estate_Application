@@ -14,7 +14,7 @@ const RentalProperties = () => {
     const loadData = async () => {
       try {
         const data = await fetchProperties();
-        setProperties(data.slice(6, 12)); // take another set for rentals
+        setProperties(data); // take another set for rentals
       } catch (error) {
         console.error("Error fetching rental properties:", error);
       }

@@ -13,7 +13,7 @@ const BestProperties = () => {
     const loadData = async () => {
       try {
         const data = await fetchProperties();
-        setProperties(data.slice(0, 6)); // show 6 for scrolling
+        setProperties(data); // show 6 for scrolling
       } catch (error) {
         console.error("Error fetching properties:", error);
       }
